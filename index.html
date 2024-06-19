@@ -1,163 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanjit Singh Chouhan Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Sanjit Singh Chouhan</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Framework CSS Files -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" >
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Sanjit Singh Chouhan</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex flex-column justify-content-center">
+
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="#skills"><i class="bi bi-lightbulb navicon"></i><span>Skills</span></a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
     </nav>
 
-    <header class="hero bg-dark text-white text-center py-5">
-        <div class="container">
-            <h1 class="display-4">Sanjit Singh Chouhan</h1>
-            <p class="lead">Software Development Professional with expertise in Microservices, Machine Learning, and Cloud Technologies.</p>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <img src="assets/img/hero-bg.jpg" alt="">
+
+      <div class="container" data-aos="zoom-out">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <h2>Sanjit Singh Chouhan</h2>
+            <p>I'm <span class="typed"
+                data-typed-items="Developer, Gamer, Fitness Enthusiast, Open Source Enthusiast">Developer</span><span
+                class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+            <div class="social-links">
+              <a href="https://x.com/sanjitschouhan"><i class="bi bi-twitter-x"></i></a>
+              <a href="https://linkedin.com/in/sanjitschouhan"><i class="bi bi-linkedin"></i></a>
+              <a href="https://github.com/sanjitschouhan"><i class="bi bi-github"></i></a>
+              <a href="https://kaggle.com/sanjitschouhan"><i class="bi bi-activity"></i></a>
+            </div>
+          </div>
         </div>
-    </header>
+      </div>
 
-    <main>
-        <section id="about" class="py-5">
-            <div class="container">
-                <h2 class="mb-3">About Me</h2>
-                <p>I am a dedicated software development professional with a strong background in creating microservices and working in the banking sector. I possess a broad skill set including Spring, Tensorflow, Pytorch, SciKit Learn, DevOps, AWS, and PCF. My academic achievements include several nanodegrees from Udacity, specializing in machine learning, deep learning, and computer vision.</p>
-            </div>
-        </section>
+    </section><!-- /Hero Section -->
 
-        <section id="experience" class="py-5 bg-light">
-            <div class="container">
-                <h2 class="mb-3">Experience</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <h4>Software Development Engineer 2, Amazon, Bangalore</h4>
-                        <p><strong>May 2022 - Present</strong></p>
-                    </div>
-                    <div class="timeline-item">
-                        <h4>Software Engineer 2, Paypal, Bangalore</h4>
-                        <p><strong>August 2021 - April 2022</strong></p>
-                        <ul>
-                            <li>Developed and managed the Credit Risk Operations Workbench backend API.</li>
-                        </ul>
-                    </div>
-                    <div class="timeline-item">
-                        <h4>Analyst, DBS Asia Hub 2, Hyderabad</h4>
-                        <p><strong>September 2020 - August 2021</strong></p>
-                        <ul>
-                            <li>Created frameworks to facilitate data transfer to on-premise data warehouses.</li>
-                            <li>Developed experience layer APIs for partner integration.</li>
-                            <li>Oversaw CI/CD processes for the platform.</li>
-                            <li>Managed cloud deployments, optimizing cloud costs by 50% for the team.</li>
-                            <li>Designed and implemented data ingestion and compute pipelines.</li>
-                        </ul>
-                    </div>
-                    <div class="timeline-item">
-                        <h4>Technical Associate, DBS Asia Hub 2, Hyderabad</h4>
-                        <p><strong>July 2018 - August 2020</strong></p>
-                        <ul>
-                            <li>Developed experience layer APIs for partner integration.</li>
-                            <li>Maintained API security frameworks.</li>
-                            <li>Automated partner onboarding processes, significantly reducing onboarding time.</li>
-                            <li>Created and managed CI/CD pipelines for the team.</li>
-                            <li>Automated API traffic and usage reporting, reducing manual work significantly.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- About Section -->
+    <section id="about" class="about section">
 
-        <section id="projects" class="py-5">
-            <div class="container">
-                <h2 class="mb-3">Projects</h2>
-                <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Image Recognition with Super Resolution</h5>
-                                <p class="card-text">Conducted research on facial recognition by comparing the effects of applying a super-resolution algorithm on input to facial recognition models.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">College Feedback Portal - HITAM</h5>
-                                <p class="card-text">Developed a portal for anonymous feedback collection from students, with data presented in graphical summaries.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Sahaya App</h5>
-                                <p class="card-text">Developed an Android application for the Sahaya Society of Hyderabad to manage community activities and connect with members.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Fixcell Website</h5>
-                                <p class="card-text">Created a website for an online phone repair booking service in Hyderabad, including service listings, booking, and order management.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>Software development professional with a strong background in creating microservices. I possess a broad skill
+          set including Spring, Tensorflow, Pytorch, SciKit Learn, DevOps, AWS, and PCF. I have over five years of
+          industrial experience. I have made significant contributions to open-source communities. My academic
+          achievements include several nanodegrees from Udacity, specializing in machine learning, deep learning, and
+          computer vision. I hold a Bachelor's degree in Computer Science and Engineering.</p>
+      </div><!-- End Section Title -->
+    </section><!-- /About Section -->
 
-        <section id="skills" class="py-5 bg-light">
-            <div class="container">
-                <h2 class="mb-3">Skills</h2>
-                <div class="row">
-                    <div class="col-md-6">
-                        <ul class="list-unstyled">
-                            <li><strong>Programming Languages:</strong> Python, C++, Java, C, Bash, Kotlin</li>
-                            <li><strong>Frameworks:</strong> Spring, Tensorflow, PyTorch, Scikit Learn, Flask, Express.js, Ruby on Rails</li>
-                            <li><strong>Cloud Technologies:</strong> AWS (SageMaker, Lambda, EC2, DynamoDB, API-GW, Step Functions, S3, RDS), Firebase, PCF, Heroku</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="list-unstyled">
-                            <li><strong>Database:</strong> MySQL, MariaDB</li>
-                            <li><strong>Web Technologies:</strong> NodeJS, JS, ReactJs</li>
-                            <li><strong>Mobile Development:</strong> Android</li>
-                            <li><strong>CI/CD:</strong> Jenkins, Jira</li>
-                            <li><strong>Tools & Software:</strong> Jupyter, Git, Jetbrains IDEs, VS Code</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills section bg-light">
 
-        <section id="contact" class="py-5">
-            <div class="container">
-                <h2 class="mb-3">Contact Me</h2>
-                <p>If you would like to get in touch, please email me at <a href="mailto:sanjitschouhan@gmail.com">sanjitschouhan@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/sanjitschouhan" target="_blank">LinkedIn</a>.</p>
-                <p>You can also find my work on <a href="https://github.com/sanjitschouhan" target="_blank">GitHub</a> and <a href="https://www.kaggle.com/sanjitschouhan" target="_blank">Kaggle</a>.</p>
-            </div>
-        </section>
-    </main>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+      </div><!-- End Section Title -->
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="scripts.js"></script>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+            <p><strong>Programming Languages:</strong> Python, C++, Java, C, Bash, Kotlin, Rust, Ruby</p>
+            <p><strong>Frameworks:</strong> Spring, TensorFlow, PyTorch, Scikit Learn, Flask, Express.js, Ruby on Rails
+            </p>
+            <p><strong>Cloud Technologies:</strong> AWS, Firebase, PCF, Heroku</p>
+            <p><strong>Database:</strong> MySQL, MariaDB, Postgres, DynamoDB</p>
+          </div>
+
+          <div class="col-lg-6">
+            <p><strong>Web Technologies:</strong> NodeJS, JavaScript, ReactJs, VueJs</p>
+            <p><strong>Mobile Development:</strong> Android</p>
+            <p><strong>CI/CD:</strong> Jenkins, Jira, Code Pipelines</p>
+            <p><strong>Tools & Software:</strong> Jupyter, Git, JetBrains IDEs, VS Code</p>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Sumary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Sanjit Singh Chouhan</h4>
+              <p><em>Dedicated software development professional with 5+ years of experience having a robust background
+                  in creating microservices.
+                  Proficient in Spring, TensorFlow, PyTorch, SciKit Learn, DevOps, AWS, and PCF. Academic
+                  accomplishments include
+                  multiple nanodegrees specializing in machine learning, deep learning, and computer vision from
+                  Udacity.</em></p>
+              <ul>
+                <li>Bengaluru, India</li>
+                <li>+91 630 333 8982</li>
+                <li>sanjitschouhan@gmail.com</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+
+            <div class="resume-item">
+              <h4>Computer Vision Nanodegree</h4>
+              <h5>January 2021 - March 2021</h5>
+              <p><em>Udacity</em></p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item">
+              <h4>Deep Learning Nanodegree</h4>
+              <h5>October 2020 - January 2021</h5>
+              <p><em>Udacity</em></p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item">
+              <h4>Machine Learning Nanodegree</h4>
+              <h5>July 2020 - September 2020</h5>
+              <p><em>Udacity</em></p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item">
+              <h4>B. Tech - Computer Science and Engineering</h4>
+              <h5>August 2014 - June 2018</h5>
+              <p><em>Hyderabad Institute of Technology and Management, JNTUH</em></p>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item">
+              <h4>10+2 - Science, CS</h4>
+              <h5>August 2013 - June 2014</h5>
+              <p><em>Kendriya Vidyalaya, CBSE</em></p>
+            </div><!-- End Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+
+            <!-- Amazon Experience -->
+            <div class="resume-item">
+              <h4>Software Development Engineer 2</h4>
+              <h5>May 2022 - Present</h5>
+              <p><em>Amazon, Bangalore, In</em></p>
+              <ul>
+                <li>Developing backend for Ring</li>
+              </ul>
+            </div><!-- End Amazon Experience -->
+
+            <!-- Paypal Experience -->
+            <div class="resume-item">
+              <h4>Software Engineer 2</h4>
+              <h5>August 2021 - April 2022</h5>
+              <p><em>Paypal, Bangalore, In</em></p>
+              <ul>
+                <li>Build and Manage Credit Risk Operations Workbench backend API</li>
+              </ul>
+            </div><!-- End Paypal Experience -->
+
+            <!-- DBS Asia Hub 2 (Analyst) Experience -->
+            <div class="resume-item">
+              <h4>Analyst</h4>
+              <h5>September 2020 - August 2021</h5>
+              <p><em>DBS Asia Hub 2, Hyderabad, In</em></p>
+              <ul>
+                <li>Created framework to push data to on-premise data warehouse</li>
+                <li>Created experience layer APIs for partner integration</li>
+                <li>Managed CICD process for the platform</li>
+                <li>Managed deployments on cloud and optimization 50% cloud costing for team</li>
+                <li>Created Data Ingestion Pipelines and compute pipelines</li>
+              </ul>
+            </div><!-- End Analyst Experience -->
+
+            <!-- DBS Asia Hub 2 (Technical Associate) Experience -->
+            <div class="resume-item">
+              <h4>Technical Associate</h4>
+              <h5>July 2018 - August 2020</h5>
+              <p><em>DBS Asia Hub 2, Hyderabad, In</em></p>
+              <ul>
+                <li>Created experience layer APIs for partner integration</li>
+                <li>Maintained API Security Framework</li>
+                <li>Created interface for automating partner onboarding to reduce time taken for process of onboarding
+                  new partners</li>
+                <li>Created and managed CICD pipelines for the team</li>
+                <li>Automated reporting of API traffic and usage stats which reduced hours of manual work everyday</li>
+              </ul>
+            </div><!-- End Technical Associate Experience -->
+
+          </div><!-- End Professional Experience Column -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Certifications</h3>
+
+            <!-- Certification: Practical Machine Learning with Tensorflow -->
+            <div class="resume-item">
+              <h4>Practical Machine Learning with Tensorflow</h4>
+              <p><em>NPTEL, IIT Madras and Google</em></p>
+            </div><!-- End Certification: Practical Machine Learning with Tensorflow -->
+
+            <!-- Certification: Python for Data Science -->
+            <div class="resume-item">
+              <h4>Python for Data Science</h4>
+              <p><em>NPTEL, IIT Madras</em></p>
+            </div><!-- End Certification: Python for Data Science -->
+
+            <h3 class="resume-title">Publications</h3>
+
+            <!-- Publication: Facial Recognition Using Deep Learning -->
+            <div class="resume-item">
+              <h4>Facial Recognition Using Deep Learning</h4>
+            </div><!-- End Publication: Facial Recognition Using Deep Learning -->
+
+          </div><!-- End Certifications & Publications Column -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Projects</h3>
+
+            <!-- Project: Image Recognition with Super Resolution -->
+            <div class="resume-item">
+              <h4>Image Recognition with Super Resolution</h4>
+              <p>Facial Recognition Research project for comparing the effect of applying super resolution algorithm and
+                model on input to facial recognition model.</p>
+            </div><!-- End Project: Image Recognition with Super Resolution -->
+
+            <!-- Project: College Feedback Portal - HITAM -->
+            <div class="resume-item">
+              <h4>College Feedback Portal - HITAM</h4>
+              <p>Developed a portal to take anonymous feedback from students after classes, training and other sessions
+                happening in college. The application presents the response data in summarized graphical representation
+                from the responses.</p>
+            </div><!-- End Project: College Feedback Portal - HITAM -->
+
+            <!-- Project: Sahaya App -->
+            <div class="resume-item">
+              <h4>Sahaya App</h4>
+              <p>Developed an Android Application for Sahaya Society of Hyderabad for helping them manage their weekly
+                community activities and connect with members of society.</p>
+            </div><!-- End Project: Sahaya App -->
+
+            <!-- Project: Fixcell Website -->
+            <div class="resume-item">
+              <h4>Fixcell Website (Freelance)</h4>
+              <p>Developed Website for Hyderabad based startup for online booking of phone repairs. Website included
+                listing of all services, booking for services, and managing orders.</p>
+            </div><!-- End Project: Fixcell Website -->
+
+          </div><!-- End Projects Column -->
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg">
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Me</h3>
+                <p>+91 630 333 8982</p>
+              </div>
+            </div><!-- End Info Item -->
+          </div>
+
+          <div class="col-lg">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Me</h3>
+                <p>sanjitschouhan@gmail.com</p>
+              </div>
+            </div><!-- End Info Item -->
+          </div>
+
+          <div class="col-lg">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-linkedin flex-shrink-0"></i>
+              <div>
+                <h3>Connect with Me</h3>
+                <p>sanjitschouhan</p>
+              </div>
+            </div><!-- End Info Item -->
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+    <div class="container">
+      <h3 class="sitename">Sanjit Singh Chouhan</h3>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://x.com/sanjitschouhan"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://linkedin.com/in/sanjitschouhan"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/sanjitschouhan"><i class="bi bi-github"></i></a>
+        <a href="https://kaggle.com/sanjitschouhan"><i class="bi bi-activity"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Framework JS Files -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
