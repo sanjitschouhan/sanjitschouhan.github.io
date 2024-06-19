@@ -1,1 +1,1 @@
-open sanjitschouhan.github.io
+open [sanjitschouhan.github.io](https://sanjitschouhan.github.io)
