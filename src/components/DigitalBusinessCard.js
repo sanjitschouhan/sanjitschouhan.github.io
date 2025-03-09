@@ -3,19 +3,6 @@ import profileImage from "../profile.jpg";
 import { FaLinkedin, FaInstagram, FaWhatsapp, FaAddressBook, FaX } from "react-icons/fa6";
 
 export default function DigitalBusinessCard() {
-  const vCardData = `BEGIN:VCARD\nVERSION:3.0\nFN:Sanjit Singh Chouhan\nTEL:+916303338982\nEMAIL:sanjitschouhan@gmail.com\nURL:https://sanjitschouhan.github.io\nEND:VCARD`;
-
-  const downloadVCard = () => {
-    const blob = new Blob([vCardData], { type: "text/vcard" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "sanjit_chouhan.vcf";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-  };
-
   // Detect system theme
   const [theme, setTheme] = useState(() =>
     window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
@@ -44,9 +31,10 @@ export default function DigitalBusinessCard() {
           💻&nbsp;Code | 🏋️&nbsp;Gym | 🎮&nbsp;Video Games | 🚴‍♂️&nbsp;Bike Trips | 🎶&nbsp;Music Lover | ⛰️&nbsp;Trekking
         </p>
         <div className="mt-4 space-y-3">
-          <button onClick={downloadVCard} className="flex items-center justify-center w-full bg-green-600 dark:bg-green-500 text-white py-2 rounded-xl shadow-md space-x-2">
+          <a href="./sanjit_chouhan.vcf" 
+            className="flex items-center justify-center w-full bg-green-600 text-white py-2 rounded-xl shadow-md space-x-2">
             <FaAddressBook /> <span>Add Me to Contacts</span>
-          </button>
+          </a>
           <a href="https://www.linkedin.com/in/sanjitschouhan" target="_blank" className="flex items-center justify-center w-full bg-blue-700 dark:bg-blue-600 text-white py-2 rounded-xl shadow-md space-x-2">
             <FaLinkedin /> <span>sanjitschouhan</span>
           </a>
