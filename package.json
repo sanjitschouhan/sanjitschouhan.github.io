@@ -20,8 +20,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "rm -rf docs && npm run build",
+    "deploy": "mv build docs"
   },
   "browserslist": {
     "production": [
