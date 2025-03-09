@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import profileImage from "../profile.jpg";
-import { FaLinkedin, FaInstagram, FaWhatsapp, FaAddressBook, FaX } from "react-icons/fa6";
+import { FaLinkedin, FaInstagram, FaWhatsapp, FaAddressBook, FaX, FaPhone } from "react-icons/fa6";
 
 export default function DigitalBusinessCard() {
   // Detect system theme
@@ -31,7 +31,7 @@ export default function DigitalBusinessCard() {
           💻&nbsp;Code | 🏋️&nbsp;Gym | 🎮&nbsp;Video Games | 🚴‍♂️&nbsp;Bike Trips | 🎶&nbsp;Music Lover | ⛰️&nbsp;Trekking
         </p>
         <div className="mt-4 space-y-3">
-          <a href="./sanjit_chouhan.vcf" 
+          <a href="./sanjit_chouhan.vcf"
             className="flex items-center justify-center w-full bg-green-600 text-white py-2 rounded-xl shadow-md space-x-2">
             <FaAddressBook /> <span>Add Me to Contacts</span>
           </a>
@@ -46,6 +46,13 @@ export default function DigitalBusinessCard() {
           </a>
           <a href="https://wa.me/916303338982" target="_blank" className="flex items-center justify-center w-full bg-green-500 dark:bg-green-400 text-white py-2 rounded-xl shadow-md space-x-2">
             <FaWhatsapp /> <span>WhatsApp</span>
+          </a>
+          <hr />
+          <a href="tel:+91 6303338982" className="flex items-center justify-center w-full text-orange-500 dark:text-orange-400">
+            Found My Key? Call Me
+          </a>
+          <a href="tel:+91 8074548058" className="flex items-center justify-center w-full text-red-500 dark:text-red-400">
+            Call My Emergency Contact
           </a>
         </div>
       </div>
