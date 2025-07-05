@@ -81,7 +81,6 @@ export default function DigitalBusinessCard() {
                     name: ["Sanjit Singh Chouhan"],
                     email: ["sanjitschouhan@gmail.com"],
                     tel: ["+91 6303338982"],
-                    address: ["Hyderabad, India"],
                     icon: [window.location.origin + "/profile.jpg"]
                   };
                   // Try to save (not all browsers support this)
