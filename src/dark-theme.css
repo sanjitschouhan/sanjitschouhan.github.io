@@ -1,3 +1,7 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
 .save-contact-btn {
   display: flex;
   align-items: center;
@@ -6,10 +10,10 @@
   width: auto;
   background: linear-gradient(90deg, #60a5fa 0%, #1e40af 100%);
   color: #fff;
-  padding: 0.65rem 1.5rem;
+  padding: 0.6rem 1.3rem;
   border-radius: 9999px;
   font-weight: 600;
-  font-size: 1.13rem;
+  font-size: 1.05rem;
   box-shadow: 0 2px 12px 0 rgba(30,64,175,0.18);
   border: none;
   outline: none;
@@ -20,26 +24,32 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  z-index: 3;
 }
+
 .save-contact-btn:hover, .save-contact-btn:focus {
   background: linear-gradient(90deg, #3b82f6 0%, #1e3a8a 100%);
   box-shadow: 0 4px 16px 0 rgba(30,64,175,0.25);
 }
+
 .card-overlap {
   margin-top: -3.5rem;
   z-index: 2;
   position: relative;
 }
+
 /* Dark Theme Styles */
 
 .card {
+  font-family: 'Inter', sans-serif;
   background: linear-gradient(135deg, rgba(17,24,39,0.9) 0%, rgba(30,41,59,0.8) 60%, rgba(30,58,138,0.8) 100%);
   backdrop-filter: blur(24px);
   box-shadow: 0 8px 32px 0 rgba(30, 41, 59, 0.4);
   border-radius: 1rem;
   padding: 1.5rem;
   text-align: center;
-  width: 20rem;
+  width: 100%;
+  max-width: 20rem;
   border: 1px solid rgba(30,41,59,0.4);
 }
 
@@ -79,15 +89,69 @@
   filter: brightness(0.6) grayscale(0.2);
 }
 
-@media (min-width: 500px) {
-  .cover-bg {
-    height: 260px;
-    width: 140vw;
-    left: 50%;
-    transform: translateX(-50%) scale(1.25);
-    position: relative;
-    max-width: none;
-    background-size: 140vw 120%;
-    background-position: center top;
-  }
+/* Email button: blue gradient for dark theme */
+.btn-email {
+  background: linear-gradient(90deg, #1e40af 0%, #2563eb 100%);
+  color: #fff;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px 0 rgba(30,64,175,0.18);
+}
+.btn-email:hover, .btn-email:focus {
+  filter: brightness(1.12);
+}
+
+/* Phone button: green gradient for dark */
+.btn-phone {
+  background: linear-gradient(90deg, #166534 0%, #22c55e 100%);
+  color: #fff;
+  border-radius: 0.75rem;
+  font-weight: 600;
+}
+.btn-phone:hover, .btn-phone:focus {
+  filter: brightness(1.12);
+}
+
+/* LinkedIn button: blue gradient for dark */
+.btn-linkedin {
+  background: linear-gradient(90deg, #004182 0%, #0a66c2 100%);
+  color: #fff;
+  border-radius: 0.75rem;
+  font-weight: 600;
+}
+.btn-linkedin:hover, .btn-linkedin:focus {
+  filter: brightness(1.12);
+}
+
+/* Instagram button: pink/orange gradient for dark */
+.btn-instagram {
+  background: linear-gradient(90deg, #b5179e 0%, #fca311 100%);
+  color: #fff;
+  border-radius: 0.75rem;
+  font-weight: 600;
+}
+.btn-instagram:hover, .btn-instagram:focus {
+  filter: brightness(1.12);
+}
+
+/* X (formerly Twitter) button: black gradient for dark theme */
+.btn-twitter {
+  background: linear-gradient(90deg, #232526 0%, #000000 100%);
+  color: #fff;
+  border-radius: 0.75rem;
+  font-weight: 600;
+}
+.btn-twitter:hover, .btn-twitter:focus {
+  filter: brightness(1.12);
+}
+
+/* WhatsApp button: green gradient for dark */
+.btn-whatsapp {
+  background: linear-gradient(90deg, #128c7e 0%, #25d366 100%);
+  color: #fff;
+  border-radius: 0.75rem;
+  font-weight: 600;
+}
+.btn-whatsapp:hover, .btn-whatsapp:focus {
+  filter: brightness(1.12);
 }
