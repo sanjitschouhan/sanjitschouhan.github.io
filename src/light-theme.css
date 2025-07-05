@@ -1,3 +1,7 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
 .save-contact-btn {
   display: flex;
   align-items: center;
@@ -6,10 +10,10 @@
   width: auto;
   background: linear-gradient(90deg, #2563eb 0%, #3b82f6 100%);
   color: #fff;
-  padding: 0.65rem 1.5rem;
+  padding: 0.6rem 1.3rem;
   border-radius: 9999px;
   font-weight: 600;
-  font-size: 1.08rem;
+  font-size: 1.05rem;
   box-shadow: 0 2px 8px 0 rgba(37,99,235,0.10);
   border: none;
   outline: none;
@@ -34,13 +38,15 @@
 /* Light Theme Styles */
 
 .card {
+  font-family: 'Inter', sans-serif;
   background: linear-gradient(135deg, rgba(96,165,250,0.8) 0%, rgba(255,255,255,0.7) 50%, rgba(191,219,254,0.8) 100%);
   backdrop-filter: blur(16px);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
   border-radius: 1rem;
   padding: 1.5rem;
   text-align: center;
-  width: 20rem;
+  width: 100%;
+  max-width: 20rem;
   border: 1px solid rgba(191,219,254,0.4);
 }
 
@@ -80,17 +86,69 @@
   overflow: hidden;
 }
 
-@media (min-width: 500px) {
-  .cover-bg {
-    height: 280px;
-    width: 160vw;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    top: 0;
-    max-width: none;
-    background-size: 160vw 130%;
-    background-position: center top;
-    overflow: hidden;
-  }
+/* Email button: blue gradient for light theme */
+.btn-email {
+  background: linear-gradient(90deg, #2563eb 0%, #1e90ff 100%);
+  color: #fff;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px 0 rgba(37,99,235,0.10);
+}
+.btn-email:hover, .btn-email:focus {
+  filter: brightness(1.08);
+}
+
+/* Phone button: green gradient */
+.btn-phone {
+  background: linear-gradient(90deg, #22c55e 0%, #16a34a 100%);
+  color: #fff;
+  border-radius: 0.75rem;
+  font-weight: 600;
+}
+.btn-phone:hover, .btn-phone:focus {
+  filter: brightness(1.08);
+}
+
+/* LinkedIn button: blue gradient */
+.btn-linkedin {
+  background: linear-gradient(90deg, #0a66c2 0%, #004182 100%);
+  color: #fff;
+  border-radius: 0.75rem;
+  font-weight: 600;
+}
+.btn-linkedin:hover, .btn-linkedin:focus {
+  filter: brightness(1.08);
+}
+
+/* Instagram button: pink/orange gradient */
+.btn-instagram {
+  background: linear-gradient(90deg, #fd5c63 0%, #fca311 100%);
+  color: #fff;
+  border-radius: 0.75rem;
+  font-weight: 600;
+}
+.btn-instagram:hover, .btn-instagram:focus {
+  filter: brightness(1.08);
+}
+
+/* X (formerly Twitter) button: black gradient for light theme */
+.btn-twitter {
+  background: linear-gradient(90deg, #232526 0%, #000000 100%);
+  color: #fff;
+  border-radius: 0.75rem;
+  font-weight: 600;
+}
+.btn-twitter:hover, .btn-twitter:focus {
+  filter: brightness(1.08);
+}
+
+/* WhatsApp button: green gradient */
+.btn-whatsapp {
+  background: linear-gradient(90deg, #25d366 0%, #128c7e 100%);
+  color: #fff;
+  border-radius: 0.75rem;
+  font-weight: 600;
+}
+.btn-whatsapp:hover, .btn-whatsapp:focus {
+  filter: brightness(1.08);
 }
